@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtcounterii.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wallpaper"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:id="@+id/bothTeams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/Team1"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cloud9"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cloud 9"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/killCountA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#BBDEFB"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kills"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingBottom="24dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/teamLvlA"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/towerCountA"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:paddingRight="8dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rank2"
+                    android:paddingRight="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Level"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:paddingRight="8dp"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tower"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Towers"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="24dp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/killsA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kills"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="plus1KillA"/>
+
+            <Button
+                android:id="@+id/towersA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Towers"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="plus1TowerA"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/Team2"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tnc"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TnC Gaming"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:textStyle="italic"
+
+                />
+
+            <TextView
+                android:id="@+id/killCountB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="56sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kills"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingBottom="24dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/teamLvlB"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/towerCountB"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:paddingRight="8dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rank2"
+                    android:paddingRight="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Level"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:paddingRight="8dp"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tower"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Towers"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="24dp"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/killsB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kills"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="plus1KillB"/>
+
+            <Button
+                android:id="@+id/towersB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Towers"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="plus1TowerB"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/resetGame"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="resetGame"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        />
+
+
+</RelativeLayout>
